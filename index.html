@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Ya Heuup - Perusahaan Terpercaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+            color: white;
+            position: relative;
+        }
+        .hero-bg::before {
+            content: '';
+            background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5bf9fd8a-5016-4ad9-8120-9f035e8ad612.png');
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+        }
+        .fade-in {
+            animation: fadeIn ease 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="fade-in bg-slate-50">
+    <!-- Header with Professional Logo Placeholder -->
+    <header class="bg-white shadow-lg sticky top-0 z-50 border-b border-slate-200">
+        <nav class="container mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b2b7536f-b430-4f65-a8cd-656f80572e9e.png" alt="Logo PT Ya Heuup - Runduk perusahaan modern dengan huruf Y dan H saling terkait dalam bentuk geometris representasi inovasi dan pertumbuhan" class="w-12 h-12 mr-3 rounded-full" onerror="this.style.display='none'">
+                <div class="text-2xl font-extrabold text-slate-800 gradient-text">PT Ya Heuup</div>
+            </div>
+            <ul class="hidden lg:flex space-x-10 text-sm font-medium">
+                <li><a href="#home" class="text-slate-700 hover:text-blue-600 transition-colors duration-300">Beranda</a></li>
+                <li><a href="#about" class="text-slate-700 hover:text-blue-600 transition-colors duration-300">Tentang Kami</a></li>
+                <li><a href="#services" class="text-slate-700 hover:text-blue-600 transition-colors duration-300">Layanan</a></li>
+                <li><a href="#portfolio" class="text-slate-700 hover:text-blue-600 transition-colors duration-300">Portfolio</a></li>
+                <li><a href="#team" class="text-slate-700 hover:text-blue-600 transition-colors duration-300">Tim Kami</a></li>
+                <li><a href="#contact" class="btn-primary">Kontak</a></li>
+            </ul>
+            <div class="lg:hidden">
+                <button id="menu-btn" class="text-slate-700 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-slate-200 shadow-md">
+            <ul class="px-6 py-6 space-y-4 text-sm font-medium">
+                <li><a href="#home" class="block text-slate-700 hover:text-blue-600">Beranda</a></li>
+                <li><a href="#about" class="block text-slate-700 hover:text-blue-600">Tentang Kami</a></li>
+                <li><a href="#services" class="block text-slate-700 hover:text-blue-600">Layanan</a></li>
+                <li><a href="#portfolio" class="block text-slate-700 hover:text-blue-600">Portfolio</a></li>
+                <li><a href="#team" class="block text-slate-700 hover:text-blue-600">Tim Kami</a></li>
+                <li><a href="#contact" class="block text-slate-700 hover:text-blue-600">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section with Enhanced Design -->
+    <section id="home" class="hero-bg py-24 relative overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between relative z-10">
+            <div class="lg:w-1/2 mb-12 lg:mb-0">
+                <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">Inovasi Teknologi untuk <span class="gradient-text">Bisnis Unggul</span></h1>
+                <p class="text-xl mb-8 text-slate-300 max-w-lg">PT Ya Heuup adalah mitra terpercaya Anda dalam transformasi digital dan pengembangan solusi bisnis berkelanjutan di era modern.</p>
+                <div class="flex gap-4">
+                    <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg">Jelajahi Layanan</a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-slate-900 transition-all duration-300">Hubungi Kami</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad915bad-263b-4b77-8687-40bf8cc900c2.png" alt="Ilustrasi 3D tim profesional dengan laptop, hologram grafik data, dan animasi flowchart mewakili teknologi canggih, ruang rapat modern dengan jajaran layar dan elemen futuristik untuk menunjukkan inovasi perusahaan" class="w-full max-w-lg rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <div class="hidden bg-slate-300 w-full max-w-lg h-64 rounded-xl flex items-center justify-center text-slate-600 text-lg">Gambar Tidak Dapat Dimuat</div>
+            </div>
+        </div>
+        <!-- Decorative Elements -->
+        <div class="absolute -top-40 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-bounce"></div>
+        <div class="absolute -bottom-40 -right-40 w-80 h-80 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-bounce delay-200"></div>
+    </section>
+
+    <!-- About Section Updated -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Tentang PT Ya Heuup</h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">Perusahaan terdepan dalam inovasi teknologi dan solusi bisnis berkelanjutan</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b7ba3d1a-8df3-4f98-86f7-1bf1a783fd67.png" alt="Foto gedung kantor modern PT Ya Heuup dengan arsitektur futuristik, tim karyawan berinteraksi dengan teknologi hijau, simbolisasi komitmen pada inovasi dan keberlanjutan" class="w-full rounded-xl shadow-lg card-hover" onerror="this.style.display='none'">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="space-y-6">
+                        <p class="text-slate-700 text-lg">Didirikan dengan visi menjadi pemimpin inovasi di Indonesia, PT Ya Heuup berkomitmen untuk memberikan solusi teknologi yang tidak hanya efisien, tetapi juga berkorelasi dengan pembangunan berkelanjutan.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-slate-700">Pengembangan teknologi terdepan dengan fokus pada AI dan Machine Learning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-slate-700">Konsultasi bisnis strategis untuk pertumbuhan perusahaan</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-slate-700">Dukungan teknis 24/7 untuk operasional yang lancar</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section with Cards -->
+    <section id="services" class="py-24 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Layanan Unggulan Kami</h2>
+                <p class="text-xl text-slate-600">Solusi komprehensif untuk semua kebutuhan bisnis Anda</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/07d80675-0edc-4c30-8b84-bb2b4b74717c.png" alt="Ikon digital teknologi dengan gear roda gigi terhubung, simbol pengembangan aplikasi perangkat lunak" class="w-20 h-20 rounded-lg" onerror="this.style.display='none'">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">Pengembangan Perangkat Lunak</h3>
+                    <p class="text-slate-600">Aplikasi web dan mobile yang disesuaikan dengan kebutuhan spesifik bisnis Anda, menggunakan teknologi terkini seperti React, Node.js, dan cloud computing.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0d45ad79-3158-40a8-b02a-cb600f6a2aee.png" alt="Ikon konsultasi bisnis dengan grafik analisis dan tangan saling berjabat, mewakili strategi pertumbuhan perusahaan" class="w-20 h-20 rounded-lg" onerror="this.style.display='none'">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">Konsultasi Strategis</h3>
+                    <p class="text-slate-600">Analisis mendalam pasar, perencanaan strategi bisnis, dan optimalisasi proses operasional untuk meningkatkan efisiensi dan profitabilitas.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b1b6f4ad-b200-4d18-a71e-9e6063f3a312.png" alt="Ikon dukungan teknis dengan headset pelanggan dan server, simbol tiket dukungan 24 jam" class="w-20 h-20 rounded-lg" onerror="this.style.display='none'">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">Dukungan 24/7</h3>
+                    <p class="text-slate-600">Tim ahli teknis siap membantu dengan maintenance sistem, troubleshooting, dan upgrade teknologi kapan saja diperlukan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Projects Section -->
+    <section id="portfolio" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Portfolio Proyek</h2>
+                <p class="text-xl text-slate-600">Beberapa proyek sukses yang telah kami implementasikan</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group overflow-hidden rounded-xl shadow-lg bg-slate-100">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/aa0aab7c-2813-45d6-b944-ffb6df953f0c.png" alt="Screenshot aplikasi e-commerce enterprise dengan interface bersih dan fungsi keranjang belanja, menunjukkan proyek digital transformation sukses" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">E-Commerce Platform</h3>
+                        <p class="text-slate-600">Platform digital untuk perusahaan ritel dengan integrasi payment gateway dan analytics real-time.</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-xl shadow-lg bg-slate-100">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1c038e58-c88e-401d-9cb1-58538fd83f6d.png" alt="Dashboard ERP system dengan grafik keuangan dan inventory, mewakili implementasi sistem manajemen bisnis terpadu" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">ERP System Integration</h3>
+                        <p class="text-slate-600">Sistem integrasi enterprise resource planning untuk manajemen bisnis menyeluruh dan efisien.</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-xl shadow-lg bg-slate-100">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f7332f3b-d46a-4197-b6e2-aba81fc09b17.png" alt="Interface mobile banking app dengan fitur security dan transaction, simbol proyek fintech innovation" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">FinTech Solution</h3>
+                        <p class="text-slate-600">Aplikasi keuangan digital dengan fitur keamanan tinggi dan antarmuka pengguna intuitif.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-24 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Tim Ahli Kami</h2>
+                <p class="text-xl text-slate-600">Profesional berpengalaman siap mendukung inovasi Anda</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/162808a0-69ca-4118-9e66-37629df0271b.png" alt="Potret profesional CEO pria usia 40-an dengan jas formal, mewakili kepemimpinan perusahaan" class="w-32 h-32 rounded-full mx-auto mb-4" onerror="this.style.display='none'">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Dr. Ahmad Wijaya</h3>
+                    <p class="text-slate-600 mb-1">CEO & Founder</p>
+                    <p class="text-sm text-slate-500">Pakar Teknologi & Strategi Bisnis</p>
+                </div>
+                <div class="text-center bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3421f9bd-40ee-482a-95fe-640a139925ca.png" alt="Potret profesional CTO wanita usia 30-an dengan atribut teknologi, simbol inovasi teknis" class="w-32 h-32 rounded-full mx-auto mb-4" onerror="this.style.display='none'">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Rina Sari, MSc</h3>
+                    <p class="text-slate-600 mb-1">CTO</p>
+                    <p class="text-sm text-slate-500">Tech Lead & Pengembang Inovasi</p>
+                </div>
+                <div class="text-center bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3715a35f-3ab7-4d80-afc2-97b779c28a8e.png" alt="Potret profesional CFO pria usia 45-an dengan kalkulator digital, mewakili keahlian keuangan" class="w-32 h-32 rounded-full mx-auto mb-4" onerror="this.style.display='none'">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Hendro Prabowo</h3>
+                    <p class="text-slate-600 mb-1">CFO</p>
+                    <p class="text-sm text-slate-500">Spesialis Strategi & Finansial</p>
+                </div>
+                <div class="text-center bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/97698936-c65f-4d6b-9b4d-6b614eadaf38.png" alt="Potret profesional Manager wanita usia 35-an dengan headset, simbol kualitas layanan pelanggan" class="w-32 h-32 rounded-full mx-auto mb-4" onerror="this.style.display='none'">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Maya Putri</h3>
+                    <p class="text-slate-600 mb-1">Operations Manager</p>
+                    <p class="text-sm text-slate-500">Pengawas Proyek & Layanan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section style="background:linear-gradient(135deg, #f8fafc, #e2e8f0)" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Testimoni Klien</h2>
+                <p class="text-xl text-slate-600">Apa kata klien kami tentang pengalaman bekerja dengan PT Ya Heuup</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"PT Ya Heuup telah membantu kami mentransformasi sistem IT perusahaan menjadi lebih efisien. Tim mereka sangat profesional dan hasil kerja melebihi ekspektasi."</p>
+                    <p class="text-slate-900 font-semibold">Budi Santoso, CEO PT. IndoTech</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Kualitas layanan dan kecepatan respons PT Ya Heuup sangat luar biasa. Mereka benar-benar memahami kebutuhan bisnis kami."</p>
+                    <p class="text-slate-900 font-semibold">Siti Nurhaliza, Operations Director PT. FinanceCorp</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Tim dari PT Ya Heuup tidak hanya teknis, tetapi juga memahami bisnis kami secara mendalam. Kolaborasi yang sangat memuaskan."</p>
+                    <p class="text-slate-900 font-semibold">Agus Setiawan, IT Director PT. GlobalRetail</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Professional Form -->
+    <section id="contact" class="py-24 bg-slate-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Hubungi Kami</h2>
+                <p class="text-xl text-slate-300">Siap membantu Anda menemukan solusi terbaik untuk bisnis Anda</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-semibold mb-6">Informasi Kontak</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-400 mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8
